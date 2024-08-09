@@ -98,6 +98,35 @@ h3 {
 }
 
 /**Index**/
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem;
+  background-color: var(--secundario);
+  border: 1px solid var(--gris_claro);
+  border-radius: 5px;
+}
+
+details[open] summary {
+  background-color: var(--secundario);
+}
+
+details ul, details p {
+  padding: 0.5rem;
+  margin: 0;
+  background-color: var(--azul_claro);
+  border: .5rem solid var(--gris_claro);
+  border-top: none;
+  border-radius: 0 0 .5rem .5rem;
+  list-style-type: disc; /* Muestra viñetas por defecto */
+  padding-left: 1.5rem; /* Espaciado para las viñetas */
+}
+
+details ul li {
+  margin-bottom: 0.5rem;
+}
+
+
 /**Productos**/
 /**Contacto**/
 .contacto {
