@@ -3,7 +3,6 @@
     --secundario: #00B4D8;
     --terciario: #CAF0F8 ;
     --azul_claro: #90E0EF ;
-    --azul_oscuro: #03045E ;
     --negro: #000;
     --gris_claro: #979DAC ;
 
@@ -33,6 +32,7 @@ p {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 h1, h2, h3 {
@@ -97,12 +97,82 @@ h3 {
   color: var(--gris_claro);
 }
 
-/**Contenido**/
-/**Nosotros**/
-.nosotros__titulo {
+/**Index**/
+/**Productos**/
+/**Contacto**/
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+.contacto__opciones {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-items: center;
+}
+@media (min-width: 480px) {
+  .contacto__opciones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+.contacto__caso p {
+  margin-bottom: 0rem;
+}
+.contacto__caso svg { 
+  margin-top: 0;
+}
+.contacto__caso {
+  text-align: center;
+  background-color: var(--azul_claro);
+  width: 18rem;
+  height: auto;
+  border-radius: 3rem;
+}
+@media (min-width: 480px) {
+  .contacto__caso {
+    background-color: var(--azul_claro);
+    width: 20rem;
+    height: auto;
+    border-radius: 3.5rem;
+  }
+}
+@media (min-width: 760px) {
+  .contacto__caso {
+    background-color: var(--azul_claro);
+    width: 28rem;
+    height: auto;
+    border-radius: 3.5rem;
+  }
+}
+.contacto__caso svg {
+  width: 8rem;
+  height: 8rem;
+}
+@media (min-width: 760px) {
+  .contacto__caso svg {
+    width: 9rem;
+    height: 9rem;
+  }
+}
+.contacto__caso:hover {
+  transform: scale(1.1); /* Aumenta el tamaño del icono al pasar el cursor sobre él */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Añade una sombra alrededor del icono */
+  cursor: pointer; 
+}
+.contacto__descripcion {
+  margin: 2rem 0;
+  text-align: center;
+}
+/** Parte compartida entre nosotros y contacto**/
+.nosotros__titulo, .contacto__titulo {
   margin: 2rem 0;
 }
-.nosotros {
+.nosotros, .contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,22 +181,22 @@ h3 {
   text-align: center; /* Asegura que el texto esté centrado en dispositivos pequeños */
 }
 @media (min-width: 768px) {
-  .nosotros {
+  .nosotros, .contacto {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
   }
 }
-.nosotros p {
-  padding: 0 1.5rem;
+.nosotros p, .contacto p {
+  padding: 0 2rem;
   text-align: center; /* Asegura que el texto esté centrado en dispositivos más grandes */
 }
-.nosotros__imagen {
+.nosotros__imagen, .contacto__imagen {
   width: 100%;
   height: auto;
 }
 
-
+/**Nosotros**/
 /**Bloques**/
 .contenedor {
   margin: 0 1rem;
@@ -170,7 +240,7 @@ h3 {
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  background-color: var(--azul_claro);
+  background-color: var(--principal);
 }
 .footer__contenido {
   font-size: 2.5rem;
@@ -224,4 +294,3 @@ h3 {
 .footer__logos__icons--2 {
   border-color: green; /*  Icono de whatsapp */
 }
-
