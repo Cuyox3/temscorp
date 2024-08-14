@@ -80,7 +80,7 @@ h3 {
 .navegacion__enlace {
   color: var(--negro);
   font-family: var(--fuentePrincipal);
-  font-size: 2.5rem;
+  font-size: 2.8rem;
 }
 @media (min-width: 480px) {
   .navegacion {
@@ -97,10 +97,49 @@ h3 {
   color: var(--gris_claro);
 }
 
-/**Index**/
+/**Index**/ 
+.index {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+  text-align: center; /* Centra el texto */
+}
+.index img {
+  width: 100%;
+}
+.index__recibidor h1 {
+  margin-bottom: 0rem;
+}
+.index p {
+  padding: 0 1.5rem;
+  margin-top: 0;
+}
+@media (min-width: 768px) {
+  .index__ozono {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .index__ozono h3 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+  .index__ozono .ozono {
+    grid-column: 1 / 3;
+  }
+  .index__ozono .terapia {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .index__ozono p {
+    grid-column: 2 / 3;
+    align-content: center;
+  }
+}
+
 details summary {
   cursor: pointer;
-  font-weight: bold;
+  font-size: large;
   padding: 0.5rem;
   background-color: var(--secundario);
   border: 1px solid var(--gris_claro);
@@ -112,6 +151,7 @@ details[open] summary {
 }
 
 details ul, details p {
+  font-size: medium;
   padding: 0.5rem;
   margin: 0;
   background-color: var(--azul_claro);
@@ -125,7 +165,35 @@ details ul, details p {
 details ul li {
   margin-bottom: 0.5rem;
 }
-
+.index__recomendaciones {
+  background-image: url('../imgs/fondo\ ozono.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.index__recomendaciones__contenido {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 0 1rem;
+  text-align: center;
+}
+@media (min-width: 480px) {
+  .index__recomendaciones__contenido {
+    padding: 2rem 7rem;
+    border-radius: 2rem;
+    margin: 0 3rem;
+  }
+}
+@media (min-width: 768px) {
+  .index__recomendaciones__contenido {
+    padding: 2rem 20rem;
+    border-radius: 2rem;
+    margin: 0 3rem;
+  }
+}
+.index__recomendaciones--autor {
+  font-style: italic;
+}
 
 /**Productos**/
 .productos__recibiemiento img {
@@ -142,11 +210,18 @@ details ul li {
   width: 100%;
   height: auto;
 }
+@media (min-width: 480px) {
+  .productos__venta .producto-imagen.horizontal {
+    height: 70rem;
+    width: auto;
+  }
+}
 @media (min-width: 768px) {
   .productos__venta {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 2rem;
+      justify-items: center;
   }
 }  
 .producto-contenido {
