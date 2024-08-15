@@ -23,26 +23,62 @@
 
 <body>
   
-</body>
-<header class="header">
-  <a href="../index.html"><img src="../imgs/Logo.png" alt="Tems logo" class="header__logo"></a>
-</header>
-<nav class="navegacion">
-  <a href="../index.html" class="navegacion__enlace">Inicio</a>
-  <a href="Productos.html" class="navegacion__enlace navegacion__enlace--activo">Productos</a>
-  <a href="Contacto.html" class="navegacion__enlace">Contacto</a>
-  <a href="Nosotros.html" class="navegacion__enlace">Nosotros</a>
-</nav>
+  <header class="header">
+    <section class="cotainer-navbar">
+      <nav class="navbar container">
+        <a href="../index.html" class="navbar__logo">
+          <img src="../imgs/Logo.webp" alt="Logo de Tems">
+          <span>Tems</span>
+        </a>
+        <div class="navbar__nav">
+          <ul class="nav__list">
+            <li class="nav__link">
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li class="nav__link">
+              <a href="../templates/Productos.html">Productos</a>
+            </li>
+            <li class="nav__link">
+              <a href="../templates/Contacto.html">Contacto</a>
+            </li>
+            <li class="nav__link">
+              <a href="../templates/Nosotros.html">Nosotros</a>
+            </li>
+          </ul>
+          <button class="navbar__toogle-btn">
+            <img src="../imgs/menu-icon.svg" alt="Boton del menu">
+          </button>
+          <div class="navbar__mobile-menu">
+            <ul class="nav__list-mobile">
+              <li class="nav__link-mobile">
+                <a href="../index.html">Inicio</a>
+              </li>
+              <li class="nav__link-mobile">
+                <a href="../templates/Productos.html">Productos</a>
+              </li>
+              <li class="nav__link-mobile">
+                <a href="../templates/Contacto.html">Contacto</a>
+              </li>
+              <li class="nav__link-mobile">
+                <a href="../templates/Nosotros.html">Nosotros</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </header>
+  <script src="../scripts/navbar.js"></script>
 
 <main>
 <div class="productos__recibiemiento">
   <h1>Explora nuestro equipamiento médico</h1>
-  <img src="../imgs/equipos.jpg" alt="Equipamento medico">
+  <img src="../imgs/equipos.webp" alt="Equipamento medico">
   <h3>Descubre los productos que mejor se adaptan a tus necesidades y optimiza tu práctica con lo último en innovación y confiabilidad.</h3>
 </div>
 <div class="productos__contenedor">
   <div class="productos__venta">
-    <img src="../imgs/dispositivo de ozono 2.jpg" alt="Dispositivo de ozono" class="producto-imagen">
+    <img src="../imgs/dispositivo de ozono 2.webp" alt="Dispositivo de ozono" class="producto-imagen">
     <div class="producto-contenido">
       <h3>Potencia y Eficiencia en la Purificación del Aire</h3>
         <p>Nuestro Generador de Ozono es una solución avanzada para la purificación del aire en entornos médicos y clínicos. Diseñado para eliminar bacterias, virus y olores, este generador proporciona un aire limpio y libre de contaminantes, esencial para mantener un ambiente saludable y seguro.</p>
@@ -53,7 +89,7 @@
     </div>
   </div>
   <div class="productos__venta">
-    <img src="../imgs/cama.jpg" alt="Cama de Hospital" class="producto-imagen">
+    <img src="../imgs/cama.webp" alt="Cama de Hospital" class="producto-imagen">
     <div class="producto-contenido">
       <h3>Confort y Funcionalidad para la Atención Médica</h3>
         <p>Nuestra Cama para Hospital está diseñada para proporcionar un máximo confort y funcionalidad en entornos clínicos. Con una estructura robusta y múltiples ajustes, facilita el cuidado de pacientes y mejora la eficiencia en el manejo de la atención médica.</p>
@@ -64,7 +100,7 @@
     </div>
   </div>
   <div class="productos__venta">
-    <img src="../imgs/tanque de oxigeno.jpg" alt="Tanque de oxigeno" class="producto-imagen horizontal">
+    <img src="../imgs/tanque de oxigeno.webp" alt="Tanque de oxigeno" class="producto-imagen horizontal">
     <div class="producto-contenido">
       <h3>Respira Fácilmente en Cualquier Lugar</h3>
         <p>Nuestro Tanque de Oxígeno Portátil está diseñado para proporcionar oxígeno de manera confiable y segura en cualquier situación, ya sea en el hogar, durante el transporte o en entornos clínicos. Compacto y ligero, es fácil de llevar, lo que permite a los pacientes mantener su movilidad y calidad de vida mientras reciben el soporte que necesitan.</p>
@@ -75,7 +111,7 @@
     </div>
   </div>
   <div class="productos__venta">
-    <img src="../imgs/silla.jpg" alt="Silla de ruedas" class="producto-imagen horizontal">
+    <img src="../imgs/silla.webp" alt="Silla de ruedas" class="producto-imagen horizontal">
     <div class="producto-contenido">
       <h3>Comodidad y Movilidad Sin Compromisos</h3>
         <p>Nuestra Silla de Ruedas, para niños, está diseñada para ofrecer comodidad y facilidad de movimiento en cualquier entorno. Con un diseño ergonómico y materiales de alta calidad, proporciona soporte y estabilidad para un uso diario sin esfuerzo.</p>
@@ -109,5 +145,5 @@
 </footer>
 
 <script src="../scripts/whatsapp.js"></script>
-
+</body>
 </html>

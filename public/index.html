@@ -17,36 +17,72 @@
   <link rel="stylesheet" href="css/normalize.css">
   <!--Google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Staatliches&display=swap" rel="stylesheet">
 </head>
 
 <body>
   
-</body>
 <header class="header">
-  <a href="index.html"><img src="imgs/Logo.png" alt="Tems logo" class="header__logo"></a>
+  <section class="cotainer-navbar">
+    <nav class="navbar container">
+      <a href="index.html" class="navbar__logo">
+        <img src="imgs/Logo.webp" alt="Logo de Tems">
+        <span>Tems</span>
+      </a>
+      <div class="navbar__nav">
+        <ul class="nav__list">
+          <li class="nav__link">
+            <a href="index.html">Inicio</a>
+          </li>
+          <li class="nav__link">
+            <a href="templates/Productos.html">Productos</a>
+          </li>
+          <li class="nav__link">
+            <a href="templates/Contacto.html">Contacto</a>
+          </li>
+          <li class="nav__link">
+            <a href="templates/Nosotros.html">Nosotros</a>
+          </li>
+        </ul>
+        <button class="navbar__toogle-btn">
+          <img src="imgs/menu-icon.svg" alt="Boton del menu">
+        </button>
+        <div class="navbar__mobile-menu">
+          <ul class="nav__list-mobile">
+            <li class="nav__link-mobile">
+              <a href="index.html">Inicio</a>
+            </li>
+            <li class="nav__link-mobile">
+              <a href="templates/Productos.html">Productos</a>
+            </li>
+            <li class="nav__link-mobile">
+              <a href="templates/Contacto.html">Contacto</a>
+            </li>
+            <li class="nav__link-mobile">
+              <a href="templates/Nosotros.html">Nosotros</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
 </header>
-<nav class="navegacion">
-  <a href="index.html" class="navegacion__enlace navegacion__enlace--activo">Inicio</a>
-  <a href="templates/Productos.html" class="navegacion__enlace">Productos</a>
-  <a href="templates/Contacto.html" class="navegacion__enlace">Contacto</a>
-  <a href="templates/Nosotros.html" class="navegacion__enlace">Nosotros</a>
-</nav>
+<script src="scripts/navbar.js"></script>
 
 <main class="index">
   <div class="index__recibidor">
-    <img src="imgs/dispositivo de ozono.jpg" alt="Dispositivo de ozono de Tems">
+    <img src="imgs/dispositivo de ozono.webp" alt="Dispositivo de ozono de Tems">
     <h1 class="index__titulo">TEMS Corp</h1>
     <p class="index__descripcion">Somos una empresa 100% mexicana, especializada en la fabricación y venta de equipamiento médico. Nos enorgullecemos de ofrecer productos y servicios de la más alta calidad, diseñados para satisfacer las necesidades del sector salud con precisión y confianza.</p>
   </div> 
 
   <div class="index__ozono">
-    <img src="imgs/ozono.jpeg" alt="Ozono" class="ozono">
+    <img src="imgs/ozono.webp" alt="Ozono" class="ozono">
     <h3>En TEMS nos enorgullecemos de ser uno de los precursores de los beneficios de la ozonoterapia.</h3>
     <p>Desde nuestros inicios, hemos trabajado para innovar en el campo de la salud, ofreciendo soluciones avanzadas que promuevan el bienestar y mejoren la calidad de vida de nuestros pacientes. Nuestra dedicación a la investigación y desarrollo nos ha permitido ofrecer equipos de ozonoterapia que cumplen con los más altos estándares de seguridad y eficacia.
     Nos comprometemos a seguir liderando en esta área, brindando a nuestros clientes no solo productos de vanguardia, sino también el conocimiento y soporte necesarios para maximizar los beneficios de la ozonoterapia en sus prácticas médicas.</p>
-    <img src="imgs/ozonoterapia.jpeg" alt="Ozonoterapia" class="terapia">
+    <img src="imgs/ozonoterapia.webp" alt="Ozonoterapia" class="terapia">
   </div>
 </main>
 
@@ -122,5 +158,5 @@
 </footer>
 
 <script src="scripts/whatsapp.js"></script>
-
+</body>
 </html>

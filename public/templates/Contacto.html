@@ -23,16 +23,52 @@
 
 <body>
   
-</body>
-<header class="header">
-  <a href="../index.html"><img src="../imgs/Logo.png" alt="Tems logo" class="header__logo"></a>
-</header>
-<nav class="navegacion">
-  <a href="../index.html" class="navegacion__enlace">Inicio</a>
-  <a href="Productos.html" class="navegacion__enlace">Productos</a>
-  <a href="Contacto.html" class="navegacion__enlace navegacion__enlace--activo">Contacto</a>
-  <a href="Nosotros.html" class="navegacion__enlace">Nosotros</a>
-</nav>
+  <header class="header">
+    <section class="cotainer-navbar">
+      <nav class="navbar container">
+        <a href="../index.html" class="navbar__logo">
+          <img src="../imgs/Logo.webp" alt="Logo de Tems">
+          <span>Tems</span>
+        </a>
+        <div class="navbar__nav">
+          <ul class="nav__list">
+            <li class="nav__link">
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li class="nav__link">
+              <a href="../templates/Productos.html">Productos</a>
+            </li>
+            <li class="nav__link">
+              <a href="../templates/Contacto.html">Contacto</a>
+            </li>
+            <li class="nav__link">
+              <a href="../templates/Nosotros.html">Nosotros</a>
+            </li>
+          </ul>
+          <button class="navbar__toogle-btn">
+            <img src="../imgs/menu-icon.svg" alt="Boton del menu">
+          </button>
+          <div class="navbar__mobile-menu">
+            <ul class="nav__list-mobile">
+              <li class="nav__link-mobile">
+                <a href="../index.html">Inicio</a>
+              </li>
+              <li class="nav__link-mobile">
+                <a href="../templates/Productos.html">Productos</a>
+              </li>
+              <li class="nav__link-mobile">
+                <a href="../templates/Contacto.html">Contacto</a>
+              </li>
+              <li class="nav__link-mobile">
+                <a href="../templates/Nosotros.html">Nosotros</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </header>
+  <script src="../scripts/navbar.js"></script>
 
 <main>
   <h1 class="contacto__titulo">
@@ -43,7 +79,7 @@
       <p>En Tems, estamos comprometidos con ofrecerte el mejor servicio y atención. Si tienes preguntas sobre nuestros productos, servicios, o cualquier otra consulta relacionada con equipo médico, no dudes en comunicarte con nosotros. Nuestro equipo de expertos está disponible para brindarte la asistencia que necesitas.</p>
     </div>
     <div>
-      <img src="../imgs/tems.jpg" alt="Tems contacto" class="contacto__imagen">
+      <img src="../imgs/tems.webp" alt="Tems contacto" class="contacto__imagen">
     </div>
   </div>
   
@@ -100,5 +136,5 @@
 </footer>
 
 <script src="../scripts/whatsapp.js"></script>
-
+</body>
 </html>
