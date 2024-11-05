@@ -14,13 +14,15 @@ document.querySelectorAll(".whatsapp-icon").forEach(button => {
         let mensaje = "Me gustaría cotizar ";
 
         if (producto && producto.trim()) {
-            // Verifica el producto y cambia el texto según la cantidad
+            // Verifica el producto y cambia el texto según la cantidad 
             if (producto.toLowerCase() === "cama de hospital") {
                 mensaje += cantidad > 1 ? `${cantidad} camas de hospital` : `${cantidad} cama de hospital`;
             } else if (producto.toLowerCase() === "silla de ruedas") {
                 mensaje += cantidad > 1 ? `${cantidad} sillas de ruedas` : `${cantidad} silla de ruedas`;
             } else if (producto.toLowerCase() === "generador de ozono") {
                 mensaje += cantidad > 1 ? `${cantidad} generadores de ozono` : `${cantidad} generador de ozono`;
+            } else if (producto.toLowerCase() === "tanque de oxigeno") {
+                mensaje += cantidad > 1 ? `${cantidad} tanque de oxigeno` : `${cantidad} tanque de oxigeno`;
             } else {
                 mensaje += `${cantidad} ${producto}`;
             }
